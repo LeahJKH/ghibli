@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 235, 243);
+}
+.card-styl {
+    background-color: rgb(91, 78, 56);
+    width: 580px;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    border-radius: 20px ;
+    overflow: hidden;
+    color: rgb(219, 219, 219);
+}
+.txt-cont {
+
+}
+.card-styl > img {
+    width: 175px;
+    height: fit-content;
+}
+#ghib-cont {
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   
+}

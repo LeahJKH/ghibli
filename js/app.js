@@ -22,16 +22,20 @@ checkapi(response)
 function CardCreators() {
     for(let i = 0; i < data.length; i++) {
         const d = document.createElement("div")
+        const txtD = document.createElement("div")
         const img = document.createElement("img")
         const p = document.createElement("p")
+        txtD.appendChild(p)
+        txtD.classList = "txt-cont"
         const txt = document.createTextNode(data[i].description)
         p.append(txt)
         d.id = `card${i}`
+        d.classList = "card-styl"
         
         img.src = `${data[i].image}`
         
         d.appendChild(img) 
-        d.appendChild(p)
+        d.appendChild(txtD)
         cont.appendChild(d)
     }
 }
